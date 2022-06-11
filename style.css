@@ -1,6 +1,6 @@
 * {
   font-family: "Arial";
-  scroll-margin: 98px;
+  scroll-margin: 130px;
 }
 
 body, html {
@@ -388,10 +388,6 @@ a:hover {
 
 .intro-title.name {
   position: relative;
-}
-
-.about {
-  scroll-margin-top: 98px;
 }
 
 .about .about-img {
