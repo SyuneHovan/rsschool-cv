@@ -209,6 +209,7 @@ a:hover {
   color: #a8a8a8;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 15px;
 }
 
 .navbar-b.navbar-reduce {
@@ -365,8 +366,8 @@ a:hover {
 }
 
 .img .img-img {
-  padding-right: 10rem;
-  padding-left: 10rem;
+  padding-right: 30%;
+  padding-left: 30%;
 }
 
 .img .img-img>img {
@@ -490,6 +491,10 @@ footer p {
   margin: 0;
 }
 
+footer a {
+  color: #fff;
+}
+
 footer:before {
   content: "";
   background: #888;
@@ -556,25 +561,10 @@ footer .rsschool-footer-logo {
 
 /* RESPONSIVE */
 
-@media (min-width: 577px) {
-  .counter-box {
-    margin-bottom: 1.8rem;
-  }
-}
-
 @media (min-width: 767px) {
-  .about .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
 
   .card-blog {
     margin-bottom: 3rem;
-  }
-
-  .contact .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
   }
 }
 
@@ -586,11 +576,6 @@ footer .rsschool-footer-logo {
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
     padding-left: 10px;
-  }
-
-  .navbar-b.navbar-trans .nav-link:before,
-  .navbar-b.navbar-reduce .nav-link:before {
-    margin-left: 18px;
   }
 
   .intro .intro-title {
@@ -605,40 +590,28 @@ footer .rsschool-footer-logo {
     font-size: 3.5rem;
   }
 
-  .testimonial-box .description {
-    padding: 0 5rem;
-  }
-
-  .post-box,
-  .form-comments,
-  .box-comments,
-  .widget-sidebar {
-    padding: 3rem;
-  }
-
-  .blog-wrapper .article-title {
-    font-size: 1.9rem;
-  }
-
-  .box-comments .list-comments .comment-author {
-    font-size: 1.5rem;
+  .mobile-nav-button {
+    display: none;
   }
 }
 
-@media (min-width: 992px) {
-  .testimonial-box .description {
-    padding: 0 8rem;
+@media (max-width: 1200px) {
+  .img .img-img {
+    padding-right: 20%;
+    padding-left: 20%;
+ } 
+}
+
+@media (max-width: 992px) {
+  .navbar-b.navbar-trans .nav-item,
+  .navbar-b.navbar-reduce .nav-item {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
-@media (min-width: 1200px) {
-  .testimonial-box .description {
-    padding: 0 13rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
+@media (max-width: 769px) {
+  #navbar {
+    display: none;
   }
 }
